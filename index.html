@@ -43,12 +43,14 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
-    <p>Edit YAML front matter
-Write using R Markdown
-Use an empty line followed by three dashes to separate slides!</p>
+    <ul>
+<li>This is a slidify presentation about a Shiny App that I built.</li>
+<li>The Shiny App is a interactive prediction program that allows the user to pick from two different predictions algorithms.</li>
+<li>The user can also use four sliders to select different values for predictors and the algorithm will present a result.</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -56,16 +58,52 @@ Use an empty line followed by three dashes to separate slides!</p>
 
 <slide class="class" id="intro" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Data</h2>
   </hgroup>
   <article data-timings="">
-    <p>Hi</p>
+    <ul>
+<li>The data used is the Iris dataset.</li>
+<li>This dataset was created by Edgar Anderson.</li>
+<li>It contains measurements (in centimeters) of the variables of sepal length &amp; width and petal length &amp; width for 50 flowers of each of three species of iris.</li>
+<li>The species are Iris setosa, Iris versicolor, and Iris virginica.</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="second" style="background:;">
+<slide class="class" id="data" style="background:;">
+  <hgroup>
+    <h2>Prediction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The prediction algorithms that can be selected in the Shiny App are &quot;rpart&quot; and &quot;rf.&quot;</li>
+<li>rpart is a recursive partitioning algorithm for classification, regression and survival trees. Most of its functionality is based on the 1984 book by Breiman, Friedman, Olshen and Stone.</li>
+<li>rf is a random forest algorithim, which implements Breiman&#39;s random forest algorithm (based on Breiman and Cutler&#39;s original Fortran code) for classification and regression.</li>
+<li>After selecting an algorithm, the user is told shown the accuracy of the algorithm on the test set (25% of the data).</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="prediction" style="background:;">
+  <hgroup>
+    <h2>Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This Shiny App utilizes selectInput and sliderInputs to allow the user to select different prediction algorithms and predictor values.</li>
+<li>It uses the user&#39;s selected preidiction algorithm and predictor values to produce a prediction.</li>
+<li>This app can give you an idea of how Shiny can be used to create interactive web apps with powerful R programming happening in the background.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="shiny" style="background:;">
   <article data-timings="">
     
   </article>
@@ -78,20 +116,32 @@ Use an empty line followed by three dashes to separate slides!</p>
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Data'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='NA'>
+        data-slide=3 title='Prediction'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Shiny App'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
       </a>
     </li>
   </ul>
